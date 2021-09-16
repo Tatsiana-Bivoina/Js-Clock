@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="owfont-regular.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Js Clock</title>
+</head>
+<body>
+  <main>
+    <div class="clock-container">
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hand hour-hand"></div>
+          <div class="hand min-hand"></div>
+          <div class="hand second-hand"></div>
+        </div>
+      </div>
+    </div>
+    <div class="date"></div>
+    <div class="weather-widget">
+      <div class="location">
+        <input type="text" name="city" id="input-city">
+      </div>
+      <i class="weather-icon owf"></i>
+      <div class="temperature"></div>
+      <div class="weather-description"></div>
+      <div class="wind-speed"></div>
+      <div class="humidity"></div>
+    </div>
+    <div class="audio-player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+        <li class="play-item item-active">Aqua Caelestis</li>
+        <li class="play-item">River Flows In You</li>
+        <li class="play-item">Summer Wind</li>
+        <li class="play-item">Ennio Morricone</li>
+      </ul>
+    </div>
+    <div class="relax">
+      <button class="button-relax">Время отдыха</button>
+    </div>
+  </main>
+  <section class="relax-section hidden">
+    <div class="relax-container">
+      <svg class="close-icon" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+      <h2 class="relax-title">Не делайте ничего в течение 2 минут</h2>
+      <div class="try-again">Попробуйте снова</div>
+      <div class="timer"></div>
+      <div class="note">
+        <h4>Расслабьтесь и слушайте шум моря. Не двигайте мышкой.</h4>
+      </div>
+      <div class="cover hidden"></div>
+      
+    </div>
+    
+  </section>
+  
+  
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=371c4cdc-608e-4366-9725-6a86fafa85fe&lang=ru_RU"
+  type="text/javascript">
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
